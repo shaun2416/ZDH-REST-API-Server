@@ -34,7 +34,7 @@ def get_user():
   ]
 
 
-  response_containing_array_of_array = {
+  """response_containing_array_of_array = {
     "results": [
         {
             "address_components": [
@@ -206,9 +206,182 @@ def get_user():
 
     ],
     "status": "OK"
-}
+  }"""
 
-  return json.dumps(response_containing_array_of_array)
+  array_response = [
+        {
+            "address_components": [
+                {
+                    "long_name": "1600",
+                    "short_name": "1600",
+                    "types": [
+                        "street_number"
+                    ]
+                },
+                {
+                    "long_name": "Amphitheatre Parkway",
+                    "short_name": "Amphitheatre Pkwy",
+                    "types": [
+                        "route"
+                    ]
+                },
+                {
+                    "long_name": "Mountain View",
+                    "short_name": "Mountain View",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Santa Clara County",
+                    "short_name": "Santa Clara County",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "California",
+                    "short_name": "CA",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "United States",
+                    "short_name": "US",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "94043",
+                    "short_name": "94043",
+                    "types": [
+                        "postal_code"
+                    ]
+                }
+            ],
+            "formatted_address": "1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.4224428,
+                    "lng": -122.0842467
+                },
+                "location_type": "ROOFTOP",
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.4239627802915,
+                        "lng": -122.0829089197085
+                    },
+                    "southwest": {
+                        "lat": 37.4212648197085,
+                        "lng": -122.0856068802915
+                    }
+                }
+            },
+            "place_id": "ChIJeRpOeF67j4AR9ydy_PIzPuM",
+            "plus_code": {
+                "compound_code": "CWC8+X8 Mountain View, CA",
+                "global_code": "849VCWC8+X8"
+            },
+            "types": [
+                "street_address"
+            ]
+        },
+
+        {
+            "address_components": [
+                {
+                    "long_name": "1600",
+                    "short_name": "1600",
+                    "types": [
+                        "street_number"
+                    ]
+                },
+                {
+                    "long_name": "Amphitheatre Parkway",
+                    "short_name": "Amphitheatre Pkwy",
+                    "types": [
+                        "route"
+                    ]
+                },
+                {
+                    "long_name": "Mountain View",
+                    "short_name": "Mountain View",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Santa Clara County",
+                    "short_name": "Santa Clara County",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "California",
+                    "short_name": "CA",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "United States",
+                    "short_name": "US",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "94043",
+                    "short_name": "94043",
+                    "types": [
+                        "postal_code"
+                    ]
+                }
+            ],
+            "formatted_address": "1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.4224428,
+                    "lng": -122.0842467
+                },
+                "location_type": "ROOFTOP",
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.4239627802915,
+                        "lng": -122.0829089197085
+                    },
+                    "southwest": {
+                        "lat": 37.4212648197085,
+                        "lng": -122.0856068802915
+                    }
+                }
+            },
+            "place_id": "ChIJeRpOeF67j4AR9ydy_PIzPuM",
+            "plus_code": {
+                "compound_code": "CWC8+X8 Mountain View, CA",
+                "global_code": "849VCWC8+X8"
+            },
+            "types": [
+                "street_address"
+            ]
+        }
+
+    ]
+
+
+
+  return array_response
     
 
 if __name__ == '__main__':
