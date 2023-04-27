@@ -382,7 +382,22 @@ def get_user():
 
 
   return array_response
-    
+
+
+
+@app.route('/items', methods = ['GET'])
+def get_items():
+
+     # Returns a list of users.
+  users = [
+    { 'username': 'Jane Doe', 'email': 'janedoe@example.com'},
+    { 'username': 'John Doe', 'email': 'johndoe@example.com'}
+  ]
+
+  return json.dumps({"data": users})
+
+
+
 
 if __name__ == '__main__':
   #context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
