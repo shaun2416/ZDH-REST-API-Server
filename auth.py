@@ -3,6 +3,14 @@ import jwt
 
 ISSUER = 'sample-auth-server'
 
+
+
+ENDPOINT_TO_SCOPE_MAPPING = {
+  "get_users" : "read"
+}
+
+
+
 with open('public.pem', 'rb') as f:
   public_key = f.read()
 
@@ -42,6 +50,21 @@ def get_scope_of_token(access_token):
           return None
   
   return decoded_token.get("scope")
+
+
+def validate_token_scope(access_token, endpoint):
+
+  required_scope = ENDPOINT_TO_SCOPE_MAPPING[endpoint]
+
+  token_scope = access_token.get("scope")
+
+  if token_scope == "*":
+    return True 
+  
+  return required_scope in token_scope.split()
+  
+
+  
   
 
   

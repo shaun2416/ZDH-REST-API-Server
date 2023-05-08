@@ -1,10 +1,12 @@
 import json
 #import ssl
 
-from auth import verify_access_token, get_scope_of_token
+from auth import verify_access_token, get_scope_of_token, validate_token_scope
 from flask import Flask, request
 
 app = Flask(__name__)
+
+
 
 @app.before_request
 def before_request():
@@ -31,12 +33,11 @@ def before_request():
 def get_user():
   # Returns a list of users.
   access_token = request.headers.get('Authorization')[7:]
-  token_scope = get_scope_of_token(access_token)
 
-  if "read" not in token_scope.split():
+  if not validate_token_scope(access_token=access_token, endpoint="get_users"):
     return json.dumps({
       'error': 'Invalid token: Token with read scope is required.'
-    }),
+    })
 
 
   users = [
