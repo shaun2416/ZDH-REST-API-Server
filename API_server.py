@@ -1,7 +1,7 @@
 import json
 #import ssl
 
-from auth import verify_access_token
+from auth import verify_access_token, get_scope_of_token
 from flask import Flask, request
 
 app = Flask(__name__)
@@ -25,9 +25,20 @@ def before_request():
       'error': 'Access token is invalid.'
     }), 400
 
+
+
 @app.route('/users', methods = ['GET'])
 def get_user():
   # Returns a list of users.
+  access_token = request.headers.get('Authorization')[7:]
+  token_scope = get_scope_of_token(access_token)
+
+  if "read" not in token_scope.split():
+    return json.dumps({
+      'error': 'Invalid token: Token with read scope is required.'
+    }),
+
+
   users = [
     { 'username': 'Jane Doe', 'email': 'janedoe@example.com'},
     { 'username': 'John Doe', 'email': 'johndoe@example.com'}
