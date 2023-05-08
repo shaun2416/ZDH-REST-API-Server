@@ -56,6 +56,8 @@ def get_scope_of_token(access_token):
 def validate_token_scope(access_token, endpoint):
 
   required_scope = ENDPOINT_TO_SCOPE_MAPPING[endpoint]
+  
+  access_token = access_token.replace("'", '"')
 
   token_scope = json.loads(access_token).get("scope")
 
