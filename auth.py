@@ -64,7 +64,7 @@ def validate_token_scope(access_token, endpoint):
   print(f"Access token is {decoded_token}")
 
   token_scope = decoded_token.get("scope")
-  token_scope = "*"
+  
 
   if token_scope == "*":
     return True 
