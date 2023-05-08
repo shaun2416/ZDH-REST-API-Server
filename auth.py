@@ -1,5 +1,6 @@
 import cryptography
 import jwt
+import json
 
 ISSUER = 'sample-auth-server'
 
@@ -56,7 +57,7 @@ def validate_token_scope(access_token, endpoint):
 
   required_scope = ENDPOINT_TO_SCOPE_MAPPING[endpoint]
 
-  token_scope = access_token.get("scope")
+  token_scope = json.loads(access_token).get("scope")
 
   if token_scope == "*":
     return True 
