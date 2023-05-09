@@ -7,7 +7,8 @@ ISSUER = 'sample-auth-server'
 
 
 ENDPOINT_TO_SCOPE_MAPPING = {
-  "get_users" : "read"
+  "get_users" : "read",
+  "post_users" : "write"
 }
 
 

@@ -1,8 +1,9 @@
 import json
 #import ssl
+import xmltodict
 
 from auth import verify_access_token, get_scope_of_token, validate_token_scope
-from flask import Flask, request
+from flask import Flask, request, make_response
 
 app = Flask(__name__)
 
@@ -26,6 +27,30 @@ def before_request():
     return json.dumps({
       'error': 'Access token is invalid.'
     }), 400
+
+
+@app.route('/users', methods = ['POST'])
+def create_user():
+    
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="post_users"):
+        return json.dumps({
+      'error': 'Invalid token: Token with read scope is required.'
+      })
+    
+    post_data = xmltodict.parse(request.get_data())
+    print(post_data)
+
+
+    myResponse = make_response(request.get_data())
+    myResponse.headers['customHeader'] = 'This is a custom header'
+    myResponse.mimetype = 'application/xml'
+
+    return myResponse
+    
+
+    
+    
 
 
 
