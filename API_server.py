@@ -49,6 +49,26 @@ def create_user():
     return myResponse
     
 
+@app.route('/users_json', methods = ['POST'])
+def create_user_json():
+    
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="post_users_json"):
+        return json.dumps({
+      'error': 'Invalid token: Token with read scope is required.'
+      })
+    
+    post_data = request.get_data()
+    print(post_data)
+
+
+    myResponse = make_response(request.get_data())
+    myResponse.headers['customHeader'] = 'This is a custom header'
+    myResponse.mimetype = 'application/json'
+
+    return myResponse
+
+
     
     
 
