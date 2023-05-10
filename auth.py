@@ -9,7 +9,8 @@ ISSUER = 'sample-auth-server'
 ENDPOINT_TO_SCOPE_MAPPING = {
   "get_users" : "read",
   "post_users" : "write", 
-  "post_users_json":"write"
+  "post_users_json":"write", 
+  "resource1_json": "read"
 }
 
 

@@ -29,6 +29,32 @@ def before_request():
     }), 400
 
 
+
+
+
+@app.route('/resource1_json', methods = ['GET'])
+def get_resource1():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="resource1_json/"):
+        return json.dumps({
+      'error': 'Invalid token: Token with read scope is required.'
+      })
+    
+    return json.dumps({ "res": [
+        {"COL_STRING": "jannear27@studiopress.com", 
+        "COL_INT" : 12412, 
+        "COL_DECIMAL": 241.324, 
+        "COL_TIMESTAMP": "2022-06-26 10:01:41", 
+        "COL_BOOLEAN": "false", 
+        "COL_STRUCT": { "Name" : "Martin", "Year of birth" : { "year" : 1955, "month" : 1, "day" : 23 }}  , 
+        "COL_ARRAY": [
+            {  "Name" : "Martin", "Year of birth" :  1980 },
+            {  "Name" : "Margaret", "Year of birth" : 1983 }        
+          ]  
+        }        
+    ]})
+
+
 @app.route('/users', methods = ['POST'])
 def create_user():
     
