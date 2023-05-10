@@ -55,6 +55,26 @@ def get_resource1():
     ]})
 
 
+@app.route('/resource1_xml', methods = ['GET'])
+def get_resource1():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
+        return json.dumps({
+      'error': 'Invalid token: Token with read scope is required.'
+      })
+
+    xml_data = "<root> <employees>  <employee>  <name>Shaunak</name>  <isActive>false</isActive>  <dob>1999/09/01 07:10:00</dob>    </employee>   </employees>  </root>"
+    
+    post_data = xmltodict.parse(xml_data)
+    print(post_data)
+    myResponse = make_response(request.get_data())
+    myResponse.headers['customHeader'] = 'This is a custom header'
+    myResponse.mimetype = 'application/xml'
+
+    return myResponse
+
+
+
 @app.route('/users', methods = ['POST'])
 def create_user():
     
