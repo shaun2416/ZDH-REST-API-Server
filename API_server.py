@@ -35,7 +35,7 @@ def before_request():
 @app.route('/resource1_json', methods = ['GET'])
 def get_resource1():
     access_token = request.headers.get('Authorization')[7:]
-    if not validate_token_scope(access_token=access_token, endpoint="resource1_json/"):
+    if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
         return json.dumps({
       'error': 'Invalid token: Token with read scope is required.'
       })
