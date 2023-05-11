@@ -107,6 +107,28 @@ def get_resource2_xml():
 
     return myResponse
 
+
+
+@app.route('/resource3_xml_nested_levels', methods = ['GET'])
+def get_resource3_xml():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
+        return json.dumps({
+      'error': 'Invalid token: Token with read scope is required.'
+      })
+    
+    with open('XmlData_with_nested_structs.xml', 'r') as f:
+        xml_data = f.read()
+
+    print(xml_data)
+    myResponse = make_response(xml_data)
+    myResponse.headers['customHeader'] = 'This is a custom header'
+    myResponse.mimetype = 'application/xml'
+
+    return myResponse
+
+
+
 @app.route('/resource3_json_nested_levels', methods = ['GET'])
 def get_resource3():
     access_token = request.headers.get('Authorization')[7:]

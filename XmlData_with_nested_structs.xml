@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<response>
+		<addresses>
+			<address>ABC street</address>
+			<type>primary</type>
+		</addresses>
+		<addresses>
+			<address>DEF street</address>
+			<type>secondary</type>
+		</addresses>
+	</response>
+	<response>
+		<addresses>
+			<address>PQR street</address>
+			<type>primary</type>
+		</addresses>
+		<addresses>
+			<address>XYZ street</address>
+			<type>secondary</type>
+		</addresses>
+	</response>
+	<response>
+		<addresses>
+			<address>LMN street</address>
+			<type>primary</type>
+		</addresses>
+		<addresses>
+			<address>Park street</address>
+			<type>secondary</type>
+		</addresses>
+	</response>
+</root>
