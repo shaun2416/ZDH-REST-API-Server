@@ -41,11 +41,70 @@ def get_resource1_xml():
     
     post_data = xmltodict.parse(xml_data)
     print(post_data)
-    myResponse = make_response(request.get_data())
+    myResponse = make_response(post_data)
     myResponse.headers['customHeader'] = 'This is a custom header'
     myResponse.mimetype = 'application/xml'
 
     return myResponse
+
+
+
+
+@app.route('/resource2_JSON_explode', methods = ['GET'])
+def get_resource1_xml():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
+        return json.dumps({
+      'error': 'Invalid token: Token with read scope is required.'
+      })
+    
+
+    return json.dumps({  
+
+        "int_array" : [1,2,3,4,6], 
+        "string_array": ["Notebook", "Pen", "Sharpener", "Rubber", "Stapler"], 
+        "decimal_array": [123.123, 232.235, 32.235, 52.235, 253.523, 523.564, 520.523],  
+        "double_array" : [3.141592, 2.71828, 1.6108], 
+        "timestamp_array": ["2022/01/12 10:41:24", "2023/10/30 20:43:34", "2023/04/11 21:34:32"], 
+        "boolean_array": ["true", "false", "false", "true"], 
+        "struct_array" : [{"id":5001, "name":"Shaunak Chakraborty", "designation":"QA"},  
+                         {"id":5002, "name": "Asif Ahamad", "designation":"Senior QA" }], 
+        "array_of_array": [[{"id":1001, "name":"eggs"}, {"id":1002, "name":"milk"}], 
+                            [{"id":2001, "name":"tomato"}, {"id":2002, "name":"broccoli"}], 
+                            [{"id":3001, "name":"Apple"}, {"id":3002, "name":"Oranges"}]]
+     })
+
+
+
+@app.route('/resource2_XML_explode', methods = ['GET'])
+def get_resource1_xml():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
+        return json.dumps({
+      'error': 'Invalid token: Token with read scope is required.'
+      })
+      
+    xml_data_dict = {  
+
+        "int_array" : [1,2,3,4,6], 
+        "string_array": ["Notebook", "Pen", "Sharpener", "Rubber", "Stapler"], 
+        "decimal_array": [123.123, 232.235, 32.235, 52.235, 253.523, 523.564, 520.523],  
+        "double_array" : [3.141592, 2.71828, 1.6108], 
+        "timestamp_array": ["2022/01/12 10:41:24", "2023/10/30 20:43:34", "2023/04/11 21:34:32"], 
+        "boolean_array": ["true", "false", "false", "true"], 
+        "struct_array" : [{"id":5001, "name":"Shaunak Chakraborty", "designation":"QA"},  
+                         {"id":5002, "name": "Asif Ahamad", "designation":"Senior QA" }], 
+        "array_of_array": [[{"id":1001, "name":"eggs"}, {"id":1002, "name":"milk"}], 
+                            [{"id":2001, "name":"tomato"}, {"id":2002, "name":"broccoli"}], 
+                            [{"id":3001, "name":"Apple"}, {"id":3002, "name":"Oranges"}]]
+     }
+
+    myResponse = make_response(xml_data_dict)
+    myResponse.headers['customHeader'] = 'This is a custom header'
+    myResponse.mimetype = 'application/xml'
+
+    return myResponse
+
 
 
 
