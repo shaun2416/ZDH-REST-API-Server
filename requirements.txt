@@ -12,3 +12,4 @@ PyJWT==2.6.0
 pyOpenSSL==23.1.0
 Werkzeug==2.2.3
 xmltodict==0.13.0
+dicttoxml==1.7.16

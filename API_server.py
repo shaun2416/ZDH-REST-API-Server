@@ -1,6 +1,7 @@
 import json
 #import ssl
 import xmltodict
+import dicttoxml
 
 from auth import verify_access_token, get_scope_of_token, validate_token_scope
 from flask import Flask, request, make_response
@@ -99,7 +100,8 @@ def get_resource2_xml():
                             [{"id":3001, "name":"Apple"}, {"id":3002, "name":"Oranges"}]]
      }
 
-    myResponse = make_response(xml_data_dict)
+    xml_Data = dicttoxml.dicttoxml(xml_data_dict)
+    myResponse = make_response(xml_Data.decode())
     myResponse.headers['customHeader'] = 'This is a custom header'
     myResponse.mimetype = 'application/xml'
 
