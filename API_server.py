@@ -107,7 +107,28 @@ def get_resource2_xml():
 
     return myResponse
 
+@app.route('/resource3_json_nested_levels', methods = ['GET'])
+def get_resource3():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
+        return json.dumps({
+      'error': 'Invalid token: Token with read scope is required.'
+      })
+    
+    return json.dumps({
+                "response": [{
+		                    "addresses":[{ "address": "ABC street", "type": "primary" }, { "address":"DEF street", "type":"secondary" }]
+	                    },
 
+                        {
+		                    "addresses":[{ "address": "PQR street", "type": "primary" }, { "address":"XYZ street", "type":"secondary" }]
+	                    }, 
+
+                        {
+		                    "addresses":[{ "address": "LMN street", "type": "primary" }, { "address":"Park street", "type":"secondary" }]
+	                    }
+	            ]
+            })
 
 
 
