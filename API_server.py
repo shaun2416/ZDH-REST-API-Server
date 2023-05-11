@@ -30,7 +30,7 @@ def before_request():
 
 
 @app.route('/resource1_xml', methods = ['GET'])
-def get_resource1():
+def get_resource1_xml():
     access_token = request.headers.get('Authorization')[7:]
     if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
         return json.dumps({
