@@ -51,7 +51,7 @@ def get_resource1_xml():
 
 
 @app.route('/resource2_JSON_explode', methods = ['GET'])
-def get_resource1_xml():
+def get_resource2_json():
     access_token = request.headers.get('Authorization')[7:]
     if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
         return json.dumps({
@@ -77,7 +77,7 @@ def get_resource1_xml():
 
 
 @app.route('/resource2_XML_explode', methods = ['GET'])
-def get_resource1_xml():
+def get_resource2_xml():
     access_token = request.headers.get('Authorization')[7:]
     if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
         return json.dumps({
