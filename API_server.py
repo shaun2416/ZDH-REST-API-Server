@@ -166,6 +166,25 @@ def get_resource5_xml():
     return myResponse
 
 
+@app.route('/resource5_json_response_all_data_types', methods = ['GET'])
+def get_resource5_json():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
+        return json.dumps({
+      'error': 'Invalid token: Token with read scope is required.'
+      })
+    
+    with open('JSON_response_all_data_types.json', 'r') as f:
+        records = f.read()
+
+    print(records)
+    myResponse = make_response(records)
+    myResponse.headers['customHeader'] = 'This is a custom header'
+    myResponse.mimetype = 'application/json'
+
+    return myResponse
+
+
 
 
 

@@ -1,0 +1,138 @@
+{
+    "root": {
+      "response": [
+        {
+          "addresses": [
+            {
+              "address": "ABC street",
+              "type": "primary",
+              "gps_coordinates": {
+                "latitude": {
+                  "degree": 18,
+                  "minutes": 31,
+                  "seconds": 13.548,
+                  "direction": "N"
+                },
+                "longitude": {
+                  "degree": 73,
+                  "minutes": 51,
+                  "seconds": 24.2748,
+                  "direction": "E"
+                }
+              },
+              "is_prime_location": false,
+              "created_at": "2023-05-12T10:51:23.241Z"
+            },
+            {
+              "address": "DEF street",
+              "type": "secondary",
+              "gps_coordinates": {
+                "latitude": {
+                  "degree": 18,
+                  "minutes": 31,
+                  "seconds": 13.548,
+                  "direction": "N"
+                },
+                "longitude": {
+                  "degree": 73,
+                  "minutes": 51,
+                  "seconds": 24.2748,
+                  "direction": "E"
+                }
+              },
+              "is_prime_location": false,
+              "created_at": "2023-05-12T10:51:23.241Z"
+            }
+          ]
+        },
+        {
+          "addresses": [
+            {
+              "address": "PQR street",
+              "type": "primary",
+              "gps_coordinates": {
+                "latitude": {
+                  "degree": 18,
+                  "minutes": 31,
+                  "seconds": 13.548,
+                  "direction": "N"
+                },
+                "longitude": {
+                  "degree": 73,
+                  "minutes": 51,
+                  "seconds": 24.2748,
+                  "direction": "E"
+                }
+              },
+              "is_prime_location": false,
+              "created_at": "2023-05-12T10:51:23.241Z"
+            },
+            {
+              "address": "XYZ street",
+              "type": "secondary",
+              "gps_coordinates": {
+                "latitude": {
+                  "degree": 18,
+                  "minutes": 31,
+                  "seconds": 13.548,
+                  "direction": "N"
+                },
+                "longitude": {
+                  "degree": 73,
+                  "minutes": 51,
+                  "seconds": 24.2748,
+                  "direction": "E"
+                }
+              },
+              "is_prime_location": false,
+              "created_at": "2023-05-12T10:51:23.241Z"
+            }
+          ]
+        },
+        {
+          "addresses": [
+            {
+              "address": "LMN street",
+              "type": "primary",
+              "gps_coordinates": {
+                "latitude": {
+                  "degree": 18,
+                  "minutes": 31,
+                  "seconds": 13.548,
+                  "direction": "N"
+                },
+                "longitude": {
+                  "degree": 73,
+                  "minutes": 51,
+                  "seconds": 24.2748,
+                  "direction": "E"
+                }
+              },
+              "is_prime_location": false,
+              "created_at": "2023-05-12T10:51:23.241Z"
+            },
+            {
+              "address": "Park street",
+              "type": "secondary",
+              "gps_coordinates": {
+                "latitude": {
+                  "degree": 18,
+                  "minutes": 31,
+                  "seconds": 13.548,
+                  "direction": "N"
+                },
+                "longitude": {
+                  "degree": 73,
+                  "minutes": 51,
+                  "seconds": 24.2748,
+                  "direction": "E"
+                }
+              },
+              "is_prime_location": false,
+              "created_at": "2023-05-12T10:51:23.241Z"
+            }
+          ]
+        }
+      ]
+    }
+  }
