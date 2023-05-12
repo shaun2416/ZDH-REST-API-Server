@@ -1,0 +1,40 @@
+{
+
+    "response":[
+
+        {
+            "``Full Name``":"Shaunak Chakraborty", 
+            "~~Organization~~": "ZS Associates",
+            "!!u!requested!for!!":"Palak Savalia",
+            "application code":"6004 (ZDH)",
+            "@@deployment_type@@":"New Instance", 
+            "##environment##":"QA",
+            "$$IS$STENCIL$IMPORT$ALLOWED$":false,
+            "%%project%%name%%":"Gamida Cell Commercial Eco. Development",
+            "^^u^projectcod^^":"9904zs3611",
+            "&&u&project&manager&&":"Abhishek Singh", 
+            "**u*Select*the*below*Check*box**":true,
+            "u_project_team_lead(Consultant)":"Moinak Chakravorty", 
+            "client-name": "r9_client", 
+            "==aws==account==":"a0047", 
+            "++query+engine+type++":"hive", 
+            "do_you_require_rdm {Revo Data Manager}":false,
+            "[[is_it_a_client_implementation_or_zs_internal_project]]":"Client Implementation", 
+            "||u|business|justification|description||":"RDH new set-up for MDM", 
+            "\\transient\\cluster\\":"NO", 
+            ";;rdm;;version;;for;;rdh;;":"R13", 
+            "::which::rdh::version::required::" : "R8", 
+            "''rdm'cluster'ip'to'be'mapped'to'rdh''":"10.228.169.85",
+            "<<type_of_rdm>>":"Persistent Cluster",
+            "is,ranger,enabled":"YES",
+            "..existing..client..id..":"NO", 
+            "??root??volume??size":100,
+            "**expected_data_load_size_for_ingestion_extraction**": "10",
+            "if//using//driver//data":"YES",
+            "top level filter details":"country,bu",
+            "is_client_\"idm\"_present_on_zsservices_domain": "NO"
+        }
+    ]
+
+
+}

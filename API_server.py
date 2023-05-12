@@ -186,6 +186,42 @@ def get_resource5_json():
 
 
 
+@app.route('/resource6_xml_data_with_special_characters_in_keys', methods = ['GET'])
+def get_resource6_xml():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
+        return json.dumps({
+      'error': 'Invalid token: Token with read scope is required.'
+      })
+    
+    with open('XML_data_with_special_characters_in_keys.xml', 'r') as f:
+        records = f.read()
+
+    print(records)
+    myResponse = make_response(records)
+    myResponse.headers['customHeader'] = 'This is a custom header'
+    myResponse.mimetype = 'application/xml'
+
+    return myResponse
+
+@app.route('/resource6_json_data_with_special_characters_in_keys', methods = ['GET'])
+def get_resource6_json():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
+        return json.dumps({
+      'error': 'Invalid token: Token with read scope is required.'
+      })
+    
+    with open('JSON_Data_with_special_characters_in_keys.json', 'r') as f:
+        records = f.read()
+
+    print(records)
+    myResponse = make_response(records)
+    myResponse.headers['customHeader'] = 'This is a custom header'
+    myResponse.mimetype = 'application/json'
+
+    return myResponse
+
 
 
 @app.route('/resource3_json_nested_levels', methods = ['GET'])
