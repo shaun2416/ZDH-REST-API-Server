@@ -30,11 +30,28 @@
             "..existing..client..id..":"NO", 
             "??root??volume??size":100,
             "**expected_data_load_size_for_ingestion_extraction**": "10",
+            "##driver#data#details##": {
+                "if//using//driver//data":"YES",
+                "~~top_level_filters~~":[
+
+                    {
+                        "~~tlv id~~": 1,
+                        "@@tlv display name@@":"country",
+                        "$$tlv lov$$": ["India", "France", "Germany", "UK", "USA"]
+                    },
+                    {
+                        "{{tlv id}}": 2,
+                        "<<tlv display name>>":"bu",
+                        "^^tlv lov^^": ["Neurology", "Psychology", "Cardiology", "Radiology"]
+                    }
+                ]
+
+
+            }
+
             "if//using//driver//data":"YES",
             "top level filter details":"country,bu",
             "is_client_\\\"idm\\\"_present_on_zsservices_domain": "NO"
         }
     ]
-
-
 }
