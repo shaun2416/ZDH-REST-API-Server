@@ -128,6 +128,25 @@ def get_resource3_xml():
     return myResponse
 
 
+@app.route('/resource4_json_array_of_records', methods = ['GET'])
+def get_resource4_json():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
+        return json.dumps({
+      'error': 'Invalid token: Token with read scope is required.'
+      })
+    
+    with open('Json_data_array_of_records.json', 'r') as f:
+        array_of_records = f.read()
+
+    print(array_of_records)
+    myResponse = make_response(array_of_records)
+    myResponse.headers['customHeader'] = 'This is a custom header'
+    myResponse.mimetype = 'application/json'
+
+    return myResponse
+
+
 
 @app.route('/resource3_json_nested_levels', methods = ['GET'])
 def get_resource3():

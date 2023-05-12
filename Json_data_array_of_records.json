@@ -1,0 +1,76 @@
+ [{
+ 		"subCategories": {
+ 			"labels": [{
+ 					"value": 6,
+ 					"label": "United States"
+ 				},
+ 				{
+ 					"value": 7,
+ 					"label": "England"
+ 				},
+ 				{
+ 					"value": 8,
+ 					"label": "France"
+ 				}
+ 			]
+ 		},
+ 		"imgName": "Markets.png",
+ 		"value": "category_2",
+ 		"label": "Countries"
+ 	},
+
+ 	{
+ 		"subCategories": {
+ 			"labels": [{
+ 					"value": 23,
+ 					"label": "Consumer"
+ 				},
+ 				{
+ 					"value": 24,
+ 					"label": "Payer"
+ 				},
+ 				{
+ 					"value": 25,
+ 					"label": "Health Care"
+ 				}
+ 			]
+ 		},
+ 		"imgName": "CustomerType.png",
+ 		"value": "category_6",
+ 		"label": "Customer Type"
+ 	},
+
+ 	{
+ 		"subCategories": {
+ 			"labels": [{
+ 					"value": 14,
+ 					"label": "Master Data"
+ 				},
+ 				{
+ 					"value": 15,
+ 					"label": "National"
+ 				},
+ 				{
+ 					"value": 16,
+ 					"label": "Patient Data"
+ 				},
+ 				{
+ 					"value": 17,
+ 					"label": "Claims Data"
+ 				},
+ 				{
+ 					"value": 18,
+ 					"label": "Promotional"
+ 				}
+ 			]
+ 		},
+ 		"imgName": "FunctionalAreas.png",
+ 		"value": "category_4",
+ 		"label": "Data Types"
+ 	}
+
+
+
+
+
+ ]
