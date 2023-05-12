@@ -32,7 +32,7 @@
             "**expected_data_load_size_for_ingestion_extraction**": "10",
             "if//using//driver//data":"YES",
             "top level filter details":"country,bu",
-            "is_client_\"idm\"_present_on_zsservices_domain": "NO"
+            "is_client_\\\"idm\\\"_present_on_zsservices_domain": "NO"
         }
     ]
 
