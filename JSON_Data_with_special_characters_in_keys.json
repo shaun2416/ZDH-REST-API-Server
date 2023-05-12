@@ -21,7 +21,7 @@
             "do_you_require_rdm {Revo Data Manager}":false,
             "[[is_it_a_client_implementation_or_zs_internal_project]]":"Client Implementation", 
             "||u|business|justification|description||":"RDH new set-up for MDM", 
-            "\\transient\\cluster\\":"NO", 
+            "\\\\transient\\\\cluster\\\\":"NO", 
             ";;rdm;;version;;for;;rdh;;":"R13", 
             "::which::rdh::version::required::" : "R8", 
             "''rdm'cluster'ip'to'be'mapped'to'rdh''":"10.228.169.85",
