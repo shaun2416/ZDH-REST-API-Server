@@ -706,7 +706,7 @@ def get_items():
 
 ##put request make it for xml and json both type
 @app.route('/users_json', methods=['PUT'])
-def update_user_json():
+def update_user_json_PUT():
     access_token = request.headers.get('Authorization')[7:]
     if not validate_token_scope(access_token=access_token, endpoint="put_users_json"):
         return json.dumps({
@@ -724,7 +724,7 @@ def update_user_json():
 
 
 @app.route('/users_json', methods=['PATCH'])
-def update_user_json():
+def update_user_json_PATCH():
     access_token = request.headers.get('Authorization')[7:]
     if not validate_token_scope(access_token=access_token, endpoint="put_users_json"):
         return json.dumps({
@@ -745,7 +745,7 @@ def update_user_json():
 
 ##put request make it for xml and json both type
 @app.route('/users_xml', methods=['PUT'])
-def update_user_json():
+def update_user_XML_PUT():
     access_token = request.headers.get('Authorization')[7:]
     if not validate_token_scope(access_token=access_token, endpoint="put_users_xml"):
         return json.dumps({
@@ -764,7 +764,7 @@ def update_user_json():
 
 
 @app.route('/users_xml', methods=['PATCH'])
-def update_user_json():
+def update_user_XML_PATCH():
     access_token = request.headers.get('Authorization')[7:]
     if not validate_token_scope(access_token=access_token, endpoint="put_users_xml"):
         return json.dumps({
