@@ -10,7 +10,9 @@ ENDPOINT_TO_SCOPE_MAPPING = {
   "get_users" : "read",
   "post_users" : "write", 
   "post_users_json":"write", 
-  "resource1_json": "read"
+  "resource1_json": "read", 
+  "put_users_json": "write",
+  "put_users_xml":"write"
 }
 
 

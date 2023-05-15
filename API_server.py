@@ -702,6 +702,88 @@ def get_items():
 
 
 
+### Endpoints provided by Arya
+
+##put request make it for xml and json both type
+@app.route('/users_json', methods=['PUT'])
+def update_user_json():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="put_users_json"):
+        return json.dumps({
+            'error': 'Invalid token: Token with write scope is required.'
+        })
+
+    put_data = request.get_data()
+    print(put_data)
+
+    myResponse = make_response(put_data)
+    myResponse.headers['customHeader'] = 'This is a custom header'
+    myResponse.mimetype = 'application/json'
+
+    return myResponse
+
+
+@app.route('/users_json', methods=['PATCH'])
+def update_user_json():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="put_users_json"):
+        return json.dumps({
+            'error': 'Invalid token: Token with write scope is required.'
+        })
+
+    data = request.get_data()
+    print(data)
+
+    myResponse = make_response(data)
+    myResponse.headers['customHeader'] = 'This is a custom header'
+    myResponse.mimetype = 'application/json'
+
+    return myResponse
+
+
+
+
+##put request make it for xml and json both type
+@app.route('/users_xml', methods=['PUT'])
+def update_user_json():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="put_users_xml"):
+        return json.dumps({
+            'error': 'Invalid token: Token with write scope is required.'
+        })
+
+    put_data = xmltodict.parse(request.get_data())
+    print(put_data)
+
+    myResponse = make_response(put_data)
+    myResponse.headers['customHeader'] = 'This is a custom header'
+    myResponse.mimetype = 'application/xml'
+
+    return myResponse
+
+
+
+@app.route('/users_xml', methods=['PATCH'])
+def update_user_json():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="put_users_xml"):
+        return json.dumps({
+            'error': 'Invalid token: Token with write scope is required.'
+        })
+
+    data = xmltodict.parse(request.get_data())
+    print(data)
+
+    myResponse = make_response(data)
+    myResponse.headers['customHeader'] = 'This is a custom header'
+    myResponse.mimetype = 'application/xml'
+
+    return myResponse
+
+
+
+
+
 if __name__ == '__main__':
   #context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
   #context.load_cert_chain('domain.crt', 'domain.key')
