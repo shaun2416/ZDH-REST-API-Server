@@ -752,7 +752,7 @@ def update_user_XML_PUT():
             'error': 'Invalid token: Token with write scope is required.'
         })
 
-    put_data = xmltodict.parse(request.get_data())
+    put_data = request.get_data()
     print(put_data)
 
     myResponse = make_response(put_data)
@@ -771,7 +771,7 @@ def update_user_XML_PATCH():
             'error': 'Invalid token: Token with write scope is required.'
         })
 
-    data = xmltodict.parse(request.get_data())
+    data = request.get_data()
     print(data)
 
     myResponse = make_response(data)
