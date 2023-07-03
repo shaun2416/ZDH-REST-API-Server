@@ -262,7 +262,7 @@ def get_resource1():
         "COL_INT" : 12412, 
         "COL_DECIMAL": 241.324, 
         "COL_TIMESTAMP": "2022-06-26 10:01:41", 
-        "COL_BOOLEAN": "false", 
+        "COL_BOOLEAN": False, 
         "COL_STRUCT": { "Name" : "Martin", "Year of birth" : { "year" : 1955, "month" : 1, "day" : 23 }}  , 
         "COL_ARRAY": [
             {  "Name" : "Martin", "Year of birth" :  1980 },
