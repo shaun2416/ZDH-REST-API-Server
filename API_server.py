@@ -784,6 +784,27 @@ def update_user_XML_PATCH():
 
 
 
+@app.route('/multi_level_nested_records', methods = ['GET'])
+def get_resource4_json():
+    access_token = request.headers.get('Authorization')[7:]
+    if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
+        return json.dumps({
+      'error': 'Invalid token: Token with read scope is required.'
+      })
+    
+    with open('Nested_arrays_response.json', 'r') as f:
+        array_of_records = f.read()
+
+    print(array_of_records)
+    myResponse = make_response(array_of_records)
+    myResponse.headers['customHeader'] = 'This is a custom header'
+    myResponse.mimetype = 'application/json'
+
+    return myResponse
+
+
+
+
 if __name__ == '__main__':
   #context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
   #context.load_cert_chain('domain.crt', 'domain.key')

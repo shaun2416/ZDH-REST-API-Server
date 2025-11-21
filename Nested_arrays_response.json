@@ -1,0 +1,483 @@
+{
+    "data": {
+        "orgHierarchyTypeAPI": {
+            "nodes": [
+                {
+                    "name": "CLUSTER",
+                    "is_deleted": false,
+                    "org_hierarchy_type_id": "1",
+                    "clusters": {
+                        "nodes": [
+                            {
+                                "org_hierarchy_group_id": "636",
+                                "cluster": {
+                                    "name": "LATAM Cluster",
+                                    "id": "71",
+                                    "cluster_external_id": "LATAM_Cluster"
+                                },
+                                "clusterChildren": {
+                                    "nodes": [
+                                        {
+                                            "org_hierarchy_group_id": "635",
+                                            "orgHierarchyType": {
+                                                "name": "COUNTRY",
+                                                "id": "3"
+                                            },
+                                            "country": {
+                                                "name": "Brazil",
+                                                "id": "79",
+                                                "external_id": "Brazil"
+                                            },
+                                            "businessUnit": null,
+                                            "orgHierarchyGroupToTeamApwe": {
+                                                "nodes": [
+                                                ]
+                                            },
+                                            "clusterGrandChildren": {
+                                                "nodes": [
+                                                    {
+                                                        "org_hierarchy_group_id": "638",
+                                                        "orgHierarchyType": {
+                                                            "name": "BUSINESS UNIT",
+                                                            "id": "2"
+                                                        },
+                                                        "country": null,
+                                                        "businessUnit": {
+                                                            "name": "Brazil",
+                                                            "id": "79",
+                                                            "external_id": "Brazil"
+                                                        },
+                                                        "orgHierarchyGroupToTeamApwe": {
+                                                            "nodes": [
+                                                                {
+                                                                    "team": {
+                                                                        "name": "DFO",
+                                                                        "teamID": "142",
+                                                                        "external_id": "DFO",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "Brazil_COUNTRY_8_DFO_Brazil_15",
+                                                                                    "org_hierarchy_group_to_team_id": "114"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "team": {
+                                                                        "name": "Brazil Align",
+                                                                        "teamID": "183",
+                                                                        "external_id": "BR_Align",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "Brazil_BUSINESS UNIT_9_BR_Align22",
+                                                                                    "org_hierarchy_group_to_team_id": "155"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "team": {
+                                                                        "name": "Brazil Clinical",
+                                                                        "teamID": "185",
+                                                                        "external_id": "BR_Clinical",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "Brazil_BUSINESS UNIT_9_BR_Clinical25",
+                                                                                    "org_hierarchy_group_to_team_id": "156"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "org_hierarchy_group_id": "647",
+                                            "orgHierarchyType": {
+                                                "name": "COUNTRY",
+                                                "id": "3"
+                                            },
+                                            "country": {
+                                                "name": "Mexico",
+                                                "id": "77",
+                                                "external_id": "Mexico"
+                                            },
+                                            "businessUnit": null,
+                                            "orgHierarchyGroupToTeamApwe": {
+                                                "nodes": [
+                                                ]
+                                            },
+                                            "clusterGrandChildren": {
+                                                "nodes": [
+                                                    {
+                                                        "org_hierarchy_group_id": "641",
+                                                        "orgHierarchyType": {
+                                                            "name": "BUSINESS UNIT",
+                                                            "id": "2"
+                                                        },
+                                                        "country": null,
+                                                        "businessUnit": {
+                                                            "name": "Mexico",
+                                                            "id": "77",
+                                                            "external_id": "Mexico"
+                                                        },
+                                                        "orgHierarchyGroupToTeamApwe": {
+                                                            "nodes": [
+                                                                {
+                                                                    "team": {
+                                                                        "name": "Mexico Align",
+                                                                        "teamID": "181",
+                                                                        "external_id": "MX_Align",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "Mexico_BUSINESS UNIT_12_MX_Align24",
+                                                                                    "org_hierarchy_group_to_team_id": "152"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "team": {
+                                                                        "name": "Mexico Clinical",
+                                                                        "teamID": "182",
+                                                                        "external_id": "MX_Clinical",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "Mexico_BUSINESS UNIT_12_MX_Clinical21",
+                                                                                    "org_hierarchy_group_to_team_id": "153"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "team": {
+                                                                        "name": "Mexico DSO",
+                                                                        "teamID": "180",
+                                                                        "external_id": "MX_DSO",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "Mexico_BUSINESS UNIT_12_MX_DSO26",
+                                                                                    "org_hierarchy_group_to_team_id": "154"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "org_hierarchy_group_id": "648",
+                                            "orgHierarchyType": {
+                                                "name": "COUNTRY",
+                                                "id": "3"
+                                            },
+                                            "country": {
+                                                "name": "CALA",
+                                                "id": "80",
+                                                "external_id": "CALA"
+                                            },
+                                            "businessUnit": null,
+                                            "orgHierarchyGroupToTeamApwe": {
+                                                "nodes": [
+                                                ]
+                                            },
+                                            "clusterGrandChildren": {
+                                                "nodes": [
+                                                    {
+                                                        "org_hierarchy_group_id": "681",
+                                                        "orgHierarchyType": {
+                                                            "name": "BUSINESS UNIT",
+                                                            "id": "2"
+                                                        },
+                                                        "country": null,
+                                                        "businessUnit": {
+                                                            "name": "CALA",
+                                                            "id": "80",
+                                                            "external_id": "CALA"
+                                                        },
+                                                        "orgHierarchyGroupToTeamApwe": {
+                                                            "nodes": [
+                                                                {
+                                                                    "team": {
+                                                                        "name": "Align",
+                                                                        "teamID": "146",
+                                                                        "external_id": "Align",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "CALA_COUNTRY_14_Align_CALA_11",
+                                                                                    "org_hierarchy_group_to_team_id": "104"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "team": {
+                                                                        "name": "Clinical",
+                                                                        "teamID": "139",
+                                                                        "external_id": "Clinical",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "CALA_COUNTRY_14_Clinical_CALA_7",
+                                                                                    "org_hierarchy_group_to_team_id": "111"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "team": {
+                                                                        "name": "DSO",
+                                                                        "teamID": "141",
+                                                                        "external_id": "DSO",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "CALA_COUNTRY_14_DSO_CALA_16",
+                                                                                    "org_hierarchy_group_to_team_id": "115"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "org_hierarchy_group_id": "644",
+                                "cluster": {
+                                    "name": "US Cluster",
+                                    "id": "70",
+                                    "cluster_external_id": "US_Cluster"
+                                },
+                                "clusterChildren": {
+                                    "nodes": [
+                                        {
+                                            "org_hierarchy_group_id": "642",
+                                            "orgHierarchyType": {
+                                                "name": "COUNTRY",
+                                                "id": "3"
+                                            },
+                                            "country": {
+                                                "name": "USA",
+                                                "id": "76",
+                                                "external_id": "US"
+                                            },
+                                            "businessUnit": null,
+                                            "orgHierarchyGroupToTeamApwe": {
+                                                "nodes": [
+                                                ]
+                                            },
+                                            "clusterGrandChildren": {
+                                                "nodes": [
+                                                    {
+                                                        "org_hierarchy_group_id": "643",
+                                                        "orgHierarchyType": {
+                                                            "name": "BUSINESS UNIT",
+                                                            "id": "2"
+                                                        },
+                                                        "country": null,
+                                                        "businessUnit": {
+                                                            "name": "US",
+                                                            "id": "76",
+                                                            "external_id": "US"
+                                                        },
+                                                        "orgHierarchyGroupToTeamApwe": {
+                                                            "nodes": [
+                                                                {
+                                                                    "team": {
+                                                                        "name": "iTero Restorative & Lab BDS",
+                                                                        "teamID": "138",
+                                                                        "external_id": "iTero_Restorative_Lab_BDS",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "US_COUNTRY_2_iTero_Restorative_Lab_BDS_US_12",
+                                                                                    "org_hierarchy_group_to_team_id": "106"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "team": {
+                                                                        "name": "Onboarding Specialist",
+                                                                        "teamID": "143",
+                                                                        "external_id": "OS",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "US_COUNTRY_2_OS_US_13",
+                                                                                    "org_hierarchy_group_to_team_id": "109"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "team": {
+                                                                        "name": "US Invisalign Retail",
+                                                                        "teamID": "179",
+                                                                        "external_id": "US_Invisalign_Retail",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "US_BUSINESS UNIT_3_US_Invisalign_Retail20",
+                                                                                    "org_hierarchy_group_to_team_id": "157"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "team": {
+                                                                        "name": "US Invisalign Special Market",
+                                                                        "teamID": "184",
+                                                                        "external_id": "US_Inv_SM",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "US_BUSINESS UNIT_3_US_Inv_SM23",
+                                                                                    "org_hierarchy_group_to_team_id": "158"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "org_hierarchy_group_id": "646",
+                                "cluster": {
+                                    "name": "Canada Cluster",
+                                    "id": "72",
+                                    "cluster_external_id": "Canada_Cluster"
+                                },
+                                "clusterChildren": {
+                                    "nodes": [
+                                        {
+                                            "org_hierarchy_group_id": "645",
+                                            "orgHierarchyType": {
+                                                "name": "COUNTRY",
+                                                "id": "3"
+                                            },
+                                            "country": {
+                                                "name": "Canada",
+                                                "id": "78",
+                                                "external_id": "Canada"
+                                            },
+                                            "businessUnit": null,
+                                            "orgHierarchyGroupToTeamApwe": {
+                                                "nodes": [
+                                                ]
+                                            },
+                                            "clusterGrandChildren": {
+                                                "nodes": [
+                                                    {
+                                                        "org_hierarchy_group_id": "637",
+                                                        "orgHierarchyType": {
+                                                            "name": "BUSINESS UNIT",
+                                                            "id": "2"
+                                                        },
+                                                        "country": null,
+                                                        "businessUnit": {
+                                                            "name": "Canada",
+                                                            "id": "78",
+                                                            "external_id": "Canada"
+                                                        },
+                                                        "orgHierarchyGroupToTeamApwe": {
+                                                            "nodes": [
+                                                                {
+                                                                    "team": {
+                                                                        "name": "Invisalign Retail",
+                                                                        "teamID": "145",
+                                                                        "external_id": "Invisalign_Retail",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "Canada_COUNTRY_5_Invisalign_Retail_Canada_10",
+                                                                                    "org_hierarchy_group_to_team_id": "107"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "team": {
+                                                                        "name": "Invisalign Special Market",
+                                                                        "teamID": "140",
+                                                                        "external_id": "Inv_SM",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "Canada_COUNTRY_5_Inv_SM_Canada_4",
+                                                                                    "org_hierarchy_group_to_team_id": "110"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "team": {
+                                                                        "name": "Invisalign Customer Engagement Specialist",
+                                                                        "teamID": "144",
+                                                                        "external_id": "CES",
+                                                                        "currentVersionOrgHierarchyGroupToTeamsByTeamId": {
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "org_hierarchy_group_to_team_external_id": "Canada_COUNTRY_5_CES_Canada_1",
+                                                                                    "org_hierarchy_group_to_team_id": "119"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}
