@@ -785,7 +785,7 @@ def update_user_XML_PATCH():
 
 
 @app.route('/multi_level_nested_records', methods = ['GET'])
-def get_resource4_json():
+def get_multi_level_nested_records_json():
     access_token = request.headers.get('Authorization')[7:]
     if not validate_token_scope(access_token=access_token, endpoint="resource1_json"):
         return json.dumps({
