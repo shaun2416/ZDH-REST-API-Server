@@ -337,7 +337,7 @@ def get_user():
   ]
 
 
-  """response_containing_array_of_array = {
+  response_containing_array_of_array = {
     "results": [
         {
             "address_components": [
@@ -509,9 +509,9 @@ def get_user():
 
     ],
     "status": "OK"
-  }"""
+  }
 
-  array_response = [
+  """array_response = [
         {
             "address_components": [
                 {
@@ -680,11 +680,11 @@ def get_user():
             ]
         }
 
-    ]
+    ]"""
 
 
 
-  return array_response
+  return response_containing_array_of_array
 
 
 
