@@ -17,7 +17,7 @@ def before_request():
   if 'Bearer' not in auth_header:
     return json.dumps({
       'error': 'Access token does not exist.'
-    }), 400
+    }), 400gf
   
   access_token = auth_header[7:]
   print(f"Access token received: {access_token}")
@@ -352,7 +352,7 @@ def get_user():
                     "long_name": "Amphitheatre Parkway",
                     "short_name": "Amphitheatre Pkwy",
                     "types": [
-                        "route"
+                        {"key" :"route" }
                     ]
                 },
                 {
