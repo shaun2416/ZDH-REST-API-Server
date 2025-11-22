@@ -17,7 +17,7 @@ def before_request():
   if 'Bearer' not in auth_header:
     return json.dumps({
       'error': 'Access token does not exist.'
-    }), 400gf
+    }), 400
   
   access_token = auth_header[7:]
   print(f"Access token received: {access_token}")
